@@ -3,8 +3,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
-    android:orientation="vertical">
+    android:background="@color/layoutBackground"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
 
     <TextView
         android:id="@+id/tvInput"
@@ -13,6 +14,7 @@
         android:gravity="bottom|right|center_vertical"
         android:maxLength="12"
         android:padding="10dp"
+        android:textColor="@color/white"
         android:textSize="48sp" />
     <!--First Row -->
     <LinearLayout
@@ -28,10 +30,11 @@
             android:layout_height="match_parent"
             android:layout_margin="3dp"
             android:layout_weight="1"
-            android:text="7"
-            android:textColor="@color/black"
-            android:textSize="16sp"
+            android:background="@color/btn_background"
             android:onClick="buttonPressed"
+            android:text="7"
+            android:textColor="@color/white"
+            android:textSize="16sp"
             tools:ignore="UsingOnClickInXml" />
 
         <Button
@@ -40,10 +43,12 @@
             android:layout_height="match_parent"
             android:layout_margin="3dp"
             android:layout_weight="1"
-            android:text="8"
-            android:textColor="@color/black"
-            android:textSize="16sp"
+            android:background="@color/btn_background"
             android:onClick="buttonPressed"
+            android:text="8"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold"
             tools:ignore="UsingOnClickInXml" />
 
         <Button
@@ -52,10 +57,12 @@
             android:layout_height="match_parent"
             android:layout_margin="3dp"
             android:layout_weight="1"
-            android:text="9"
-            android:textColor="@color/black"
-            android:textSize="16sp"
+            android:background="@color/btn_background"
             android:onClick="buttonPressed"
+            android:text="9"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold"
             tools:ignore="UsingOnClickInXml" />
 
         <Button
@@ -64,11 +71,13 @@
             android:layout_height="match_parent"
             android:layout_margin="3dp"
             android:layout_weight="1"
-            android:backgroundTint="@color/btn_background"
+            android:background="@color/btn_background"
+            android:fontFamily="sans-serif-condensed"
             android:onClick="mathOperator"
             android:text="/"
-            android:textColor="@color/black"
+            android:textColor="@color/white"
             android:textSize="16sp"
+            android:textStyle="bold"
             tools:ignore="UsingOnClickInXml" />
 
 
@@ -87,11 +96,12 @@
             android:layout_height="match_parent"
             android:layout_margin="3dp"
             android:layout_weight="1"
-            android:text="4"
-            android:textColor="@color/black"
-            android:textSize="16sp"
+            android:background="@color/btn_background"
             android:onClick="buttonPressed"
-            tools:ignore="UsingOnClickInXml"  />
+            android:text="4"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            tools:ignore="UsingOnClickInXml" />
 
         <Button
             android:id="@+id/btn_fivee"
@@ -99,11 +109,12 @@
             android:layout_height="match_parent"
             android:layout_margin="3dp"
             android:layout_weight="1"
-            android:text="5"
-            android:textColor="@color/black"
-            android:textSize="16sp"
+            android:background="@color/btn_background"
             android:onClick="buttonPressed"
-            tools:ignore="UsingOnClickInXml"  />
+            android:text="5"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            tools:ignore="UsingOnClickInXml" />
 
         <Button
             android:id="@+id/btn_six"
@@ -111,11 +122,12 @@
             android:layout_height="match_parent"
             android:layout_margin="3dp"
             android:layout_weight="1"
-            android:text="6"
-            android:textColor="@color/black"
-            android:textSize="16sp"
+            android:background="@color/btn_background"
             android:onClick="buttonPressed"
-            tools:ignore="UsingOnClickInXml"/>
+            android:text="6"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            tools:ignore="UsingOnClickInXml" />
 
         <Button
             android:id="@+id/btn_multiply"
@@ -123,11 +135,13 @@
             android:layout_height="match_parent"
             android:layout_margin="3dp"
             android:layout_weight="1"
-            android:backgroundTint="@color/btn_background"
+            android:background="@color/btn_background"
+            android:fontFamily="monospace"
             android:onClick="mathOperator"
             android:text="x"
-            android:textColor="@color/black"
+            android:textColor="@color/white"
             android:textSize="16sp"
+            android:textStyle="bold"
             tools:ignore="UsingOnClickInXml" />
 
 
@@ -146,11 +160,12 @@
             android:layout_height="match_parent"
             android:layout_margin="3dp"
             android:layout_weight="1"
-            android:text="1"
-            android:textColor="@color/black"
-            android:textSize="16sp"
+            android:background="@color/btn_background"
             android:onClick="buttonPressed"
-            tools:ignore="UsingOnClickInXml"/>
+            android:text="1"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            tools:ignore="UsingOnClickInXml" />
 
         <Button
             android:id="@+id/btn_two"
@@ -158,11 +173,12 @@
             android:layout_height="match_parent"
             android:layout_margin="3dp"
             android:layout_weight="1"
-            android:text="2"
-            android:textColor="@color/black"
-            android:textSize="16sp"
+            android:background="@color/btn_background"
             android:onClick="buttonPressed"
-            tools:ignore="UsingOnClickInXml"/>
+            android:text="2"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            tools:ignore="UsingOnClickInXml" />
 
         <Button
             android:id="@+id/btn_three"
@@ -170,11 +186,12 @@
             android:layout_height="match_parent"
             android:layout_margin="3dp"
             android:layout_weight="1"
-            android:text="3"
-            android:textColor="@color/black"
-            android:textSize="16sp"
+            android:background="@color/btn_background"
             android:onClick="buttonPressed"
-            tools:ignore="UsingOnClickInXml"/>
+            android:text="3"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            tools:ignore="UsingOnClickInXml" />
 
         <Button
             android:id="@+id/btn_substract"
@@ -182,11 +199,12 @@
             android:layout_height="match_parent"
             android:layout_margin="3dp"
             android:layout_weight="1"
-            android:backgroundTint="@color/btn_background"
+            android:background="@color/btn_background"
             android:onClick="subtractionSignClicked"
             android:text="-"
-            android:textColor="@color/black"
+            android:textColor="@color/white"
             android:textSize="16sp"
+            android:textStyle="bold"
             tools:ignore="UsingOnClickInXml" />
 
 
@@ -205,11 +223,12 @@
             android:layout_height="match_parent"
             android:layout_margin="3dp"
             android:layout_weight="1"
-            android:text="0"
-            android:textColor="@color/black"
-            android:textSize="16sp"
+            android:background="@color/btn_background"
             android:onClick="buttonPressed"
-            tools:ignore="UsingOnClickInXml"/>
+            android:text="0"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            tools:ignore="UsingOnClickInXml" />
 
         <Button
             android:id="@+id/btn_decimal"
@@ -217,10 +236,11 @@
             android:layout_height="match_parent"
             android:layout_margin="3dp"
             android:layout_weight="1"
-            android:text="."
-            android:textColor="@color/black"
-            android:textSize="16sp"
+            android:background="@color/btn_background"
             android:onClick="decimalPointClicked"
+            android:text="."
+            android:textColor="@color/white"
+            android:textSize="16sp"
             tools:ignore="UsingOnClickInXml" />
 
         <Button
@@ -229,11 +249,12 @@
             android:layout_height="match_parent"
             android:layout_margin="3dp"
             android:layout_weight="1"
-            android:text="CLR"
-            android:textColor="@color/black"
-            android:textSize="16sp"
+            android:background="@color/btn_background"
             android:onClick="clearTvInput"
-            tools:ignore="UsingOnClickInXml"/>
+            android:text="CLR"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            tools:ignore="UsingOnClickInXml" />
 
         <Button
             android:id="@+id/btn_add"
@@ -241,11 +262,12 @@
             android:layout_height="match_parent"
             android:layout_margin="3dp"
             android:layout_weight="1"
-            android:backgroundTint="@color/btn_background"
+            android:background="@color/btn_background"
             android:onClick="mathOperator"
             android:text="+"
-            android:textColor="@color/black"
+            android:textColor="@color/white"
             android:textSize="16sp"
+            android:textStyle="bold"
             tools:ignore="UsingOnClickInXml" />
 
 
@@ -263,11 +285,12 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_margin="3dp"
-            android:backgroundTint="@color/btn_equals"
+            android:background="@color/btn_background"
             android:onClick="equalSign"
             android:text="="
-            android:textColor="@color/black"
+            android:textColor="@color/white"
             android:textSize="16sp"
+            android:textStyle="bold"
             tools:ignore="UsingOnClickInXml" />
     </LinearLayout>
 
