@@ -61,7 +61,7 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-    fun isMathOperator(value: String): Boolean {
+    private fun isMathOperator(value: String): Boolean {
         return if (value.startsWith("-")) {
             false
         } else {
@@ -70,13 +70,14 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-    // Handling the Real Calculation
+    // Handling the Equals Siqn for  Calculation result
     fun equalSign(view: View) {
         if (lastIsNumeric) {
             var tvValue = tvInput.text.toString()
             var prefix = ""
 
             try {
+               // making sure a minus number doesn't affect adding an arithmetic operator
                 if (tvValue.startsWith("-")) {
                     prefix = "-"
                     tvValue = tvValue.substring(1)
