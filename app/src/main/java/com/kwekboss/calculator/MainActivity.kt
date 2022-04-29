@@ -19,7 +19,7 @@ class MainActivity : AppCompatActivity() {
         tvInput = findViewById(R.id.tvInput)
     }
 
-    // Displaying the content of bottom clicked
+    // Displaying the content of the bottom clicked
     fun buttonPressed(view: View) {
         tvInput.append((view as Button).text)
         lastIsNumeric = true
